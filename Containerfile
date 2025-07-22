@@ -13,6 +13,6 @@ RUN apt-get update && \
 
 VOLUME ["/var/lib/dovecot"]
 
-USER dovecot
+USER 999:999
 ENTRYPOINT ["/usr/sbin/dovecot", "-F"]
 CMD []
